@@ -45,6 +45,8 @@ class EloquentBuilderTraitTest extends Orchestra\Testbench\TestCase
     {
         $mock = m::mock('Illuminate\Database\Eloquent\Builder');
 
-        $this->applyResourceOptions($mock);
+        $query = $this->applyResourceOptions($mock);
+
+        $this->assertEquals($mock, $query);
     }
 }

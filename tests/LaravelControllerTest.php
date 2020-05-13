@@ -77,14 +77,13 @@ class LaravelControllerTest extends Orchestra\Testbench\TestCase
         ]);
     }
 
-    /**
-     * @expectedException InvalidArgumentException
-     */
     public function testThatExceptionIsThrownWhenSettingPageButNotLimit()
     {
         $sort = [[ 'key' => 'name', 'direction' => 'DESC' ]];
         $request = $this->createRequest(['children', 'children2'], $sort, null, 2);
         $controller = $this->createControllerMock($request);
+
+        $this->expectException(InvalidArgumentException::class);
 
         $controller->getResourceOptions();
     }
