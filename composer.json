@@ -1,11 +1,7 @@
 {
-    "name": "optimus/bruno",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/moovaio/architect.git"
-        }
-    ],
+    "name": "moova/optimus-bruno",
+    "description":"moova.io fork for esbenp: optimus/bruno package",
+    "homepage":"https://github.com/moovaio/bruno",
     "autoload": {
         "psr-4": {
             "Optimus\\Bruno\\": "src/"
@@ -13,7 +9,7 @@
     },
     "require": {
         "laravel/framework": "~6.0",
-        "optimus/architect": "dev-laravel-6"
+        "moova/optimus-architect": "dev-master"
     },
     "require-dev": {
         "mockery/mockery": "1.3.*",
