@@ -9,7 +9,7 @@
     },
     "require": {
         "laravel/framework": "~6.0",
-        "moova/optimus-architect": "dev-master"
+        "moova/optimus-architect": "2.0.0"
     },
     "require-dev": {
         "mockery/mockery": "1.3.*",
